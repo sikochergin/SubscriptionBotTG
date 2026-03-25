@@ -1,0 +1,11 @@
+.myenv/
+__pycache__/
+*.pyc
+.env
+
+.idea/
+.vscode/
+
+alembic/versions/__pycache__/
+
+*.log
