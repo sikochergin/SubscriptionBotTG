@@ -101,7 +101,7 @@ async def process_subscription_card(callback: CallbackQuery) -> None:
         inline_markup = get_subscription_card_deleted_keyboard(subscription_id)
         subscription_status = "deleted"
 
-    reply_message = f"Подписка {subscription.name}\n\n Дата окончания: {subscription.enddatetime} \n Цена: {subscription.amount} \n Статус: {subscription_status}"
+    reply_message = f"Подписка {subscription.name}\n\nДата окончания: {subscription.enddatetime}\nЦена: {subscription.amount}\nСтатус: {subscription_status}"
 
     await callback.message.answer(
         text=reply_message,
