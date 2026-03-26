@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     db_password: str
 
     admin_ids: str
-    notification_chat_id: int
+    group_chat_id: int
 
     timezone: str = "Europe/Moscow"
 

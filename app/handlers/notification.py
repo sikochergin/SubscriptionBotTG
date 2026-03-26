@@ -13,7 +13,7 @@ bot = Bot(
             default=DefaultBotProperties(parse_mode=ParseMode.HTML),
         )
 
-group_chat_id = settings.notification_chat_id
+group_chat_id = settings.group_chat_id
 
 async def send_active_subs_notification(sub_list: list[Subscription]) -> None:
     print(f"Отправлено уведомление в чат {group_chat_id} 1")
